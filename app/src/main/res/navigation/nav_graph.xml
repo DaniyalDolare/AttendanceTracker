@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/setupTimeTableFragment">
+
+    <fragment
+        android:id="@+id/setupTimeTableFragment"
+        android:name="com.example.attendancetracker.SetupTimeTableFragment"
+        android:label="fragment_setup_time_table"
+        tools:layout="@layout/fragment_setup_time_table">
+        <action
+            android:id="@+id/action_setupTimeTableFragment_to_addLectureFragment"
+            app:destination="@id/addLectureFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addLectureFragment"
+        android:name="com.example.attendancetracker.AddLectureFragment"
+        android:label="fragment_add_lecture"
+        tools:layout="@layout/fragment_add_lecture">
+        <argument
+            android:name="day"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="monday" type="id"/>
+    <item name="tuesday" type="id"/>
+    <item name="wednesday" type="id"/>
+    <item name="thursday" type="id"/>
+    <item name="friday" type="id"/>
+    <item name="saturday" type="id"/>
+    <item name="sunday" type="id"/>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lectureCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/primary"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lectureList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addLectureBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:text="@string/add_lecture"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                app:strokeColor="@color/primary"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
